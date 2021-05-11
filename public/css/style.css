@@ -114,11 +114,29 @@
     border: 0;
     height:40px;
     width: 300px;
+    transition: 300ms;
 
 }
-/* OBJETIVO*/
+.btnInfor:hover{
+    filter: brightness(85%);
+}
+/*resposividade*/
+
+@media(max-width: 700px) {
+    .informativo{
+        width: 400px;
+        margin-top: 20rem;
+    }
+    .informativo p{
+        font-size: 0.8rem;
+        text-align: justify;
+        width: 350px;
+    }
+
+  }
+/* ================ OBJETIVO ============ */
 .containerCards{
-    height:900px;
+    height:100%;
     background-color: #1F0A57;
 }
 
@@ -151,10 +169,40 @@
 .cards .card1 img{
   padding-bottom: 20px;
 }
-.containerObjetivo h1{
-    color: white;
-}
 
+/*resposividade*/
+
+@media(max-width: 930px) {
+    .cards{ 
+      display: grid;
+      grid-template-columns:  1fr 1fr;
+      width:600px;
+      flex-direction: column;
+    }
+    .containerCards  h1 {
+        text-align:center;
+        padding: 40px 0px 40px 0px;
+        margin: 40px auto;
+      
+    }
+  }
+  @media(max-width: 640px){
+    .cards{ 
+        display: grid;
+        grid-template-columns:  1fr;
+        width:300px;
+        flex-direction: column;
+      }
+      .containerCards  h1 {
+          text-align:center;
+          padding: 90px 0px 40px 0px;
+          margin: 40px auto;
+          font-size: 2rem;
+        
+      }
+      
+
+  }
 
 /*==================== fases do evento ==================*/
 .fasesEvento{
@@ -168,7 +216,7 @@
     padding: 60px 0px 40px 60px;
 }
 .cardFaseEvento{
-    display: flex;
+    display: grid;
     grid-template-columns:  1fr 1fr;
     gap: 18rem;
     justify-content:center;
@@ -191,16 +239,10 @@
     color: #3C9AE4;
     font-weight: bold;
 
-
-
 }
 .cardEvento1 a{
     padding-top: 20px;
     text-decoration: underline;
-
-    
-
-  
     
 }
 .cardEvento2 img{
@@ -208,51 +250,81 @@
     background-size: cover;
 }
 
-.periodo{
-    margin-bottom: 80px;
 
+.periodo, .liveAbertura,  .etapa2 , .etapa1 ,
+.resultadoEtapa ,.etapaFinal , .etapaFinal {
+    margin-bottom: 80px;
 }
 
 
-.liveAbertura{
-    margin-bottom: 80px;
-
-}
-.etapa1{
-    margin-bottom: 80px;
-
-
-}
-.resultadoEtapa{
-    margin-bottom: 80px;
-
-}
-
-.etapa2{
-    margin-bottom: 80px;
-
-}
-
-.resultadoEtapa{
-    margin-bottom: 80px;
-
-}
-
-.etapaFinal{
-    margin-bottom: 80px;
-
-}
 .periodo p, .liveAbertura p,  .etapa2 p, .etapa1 p,
 .resultadoEtapa p,.etapaFinal p, .etapaFinal p{
     width: 500px;
 }
-/* Premios Incriveis */
+
+
+
+/*rerponsivo*/
+@media(max-width: 1200px) {
+    .cardFaseEvento{
+        gap: 5rem;     
+    }
+    .fasesEvento h1{
+        padding: 40px 0px 40px 0px;
+        text-align: center;
+       
+    }
+    .cardEvento1 p{
+        width:400px;
+    }
+
+  }
+  @media(max-width: 850px) {
+    .cardFaseEvento{
+        gap: 4rem;     
+    }
+    .fasesEvento h1{
+        font-size: 2rem;
+       
+    }
+    .cardEvento1 p{
+        width:350px;
+    }
+
+  }
+  @media(max-width: 795px) {
+    .cardEvento2 img{
+        display:none;
+    }
+    .cardFaseEvento{
+        display: flex;
+        grid-template-columns:  1fr;
+        flex-direction: column;
+    
+    }
+    .cardEvento1 p{
+        text-align:justify;
+        width: 350px;
+        font-size: 0.8rem;
+    }
+    @media(max-width: 500px) {
+        .cardEvento1 p{
+            text-align:justify;
+            width: 300px;
+            font-size: 0.8rem;
+        }
+    }
+    
+
+  }
+
+/*==================== Premios Incriveis ================ */
 
 .cardPremios{
     display: grid;
     justify-content: center;
     color: #fff;
-    height: 800px;
+    height: 770px;
 
 
 }
@@ -265,16 +337,28 @@
 
 }
 .cardPremios img{
+    width: 100%;
     background-size: cover;
+    background-position: center;
+  
+}
+/*resposividade*/
+@media(max-width: 800px){
+    .cardPremios h1{
+        padding-left: 0;
+        text-align: center;
+    
+    }
+
 }
 
-/* Informações de apoio */
+/* ============= Informações de apoio ================= */
 
 
 .informacaoApoio{
     background-color: #fff;
     margin: 0 auto;
-    height: 800px;
+    height: 100%;
 
 }
 .informacaoApoio h1{
@@ -290,6 +374,7 @@
     width:900px;
     margin: 0 auto;
     text-align:justify;
+    padding-bottom: 40px;
 }
 
 .cardInfor1 h3,.cardInfor2 h3{
@@ -308,11 +393,49 @@
 
 .cardInfor1 a{
     color: #FF7513;
+    font-weight: bold;
+}
+/*resposividade*/
+
+@media(max-width: 960px){
+    .cardsInformativos{
+        display: grid;
+        width:600px;
+        grid-template-columns:  1fr;
+        flex-direction: column;
+     
+    }
+
+}
+@media(max-width: 700px){
+    .cardsInformativos{
+        width:400px;
+    
+    }
+    .informacaoApoio h1{
+        text-align: center;
+        padding: 40px 0px 60px 0px;
+        font-size: 1.8rem;
+    }
+
+
+}
+@media(max-width: 450px){
+    .cardsInformativos{
+        width:330px;
+    
+    }
+    .informacaoApoio h1{
+        text-align: center;
+        padding: 40px 0px 60px 0px;
+        font-size: 1.4rem;
+    }
+
 }
 
-/*Comissão organizadora*/ 
+/*============ Comissão organizadora =============*/ 
 .organizadores{
-    height: 600px;
+    height: 100%;
     background: #F5F5F5;
 }
 .organizadores h1{
@@ -325,6 +448,8 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0 auto;
+    padding-bottom: 60px;
+   
 }
 .cardImg img{
     margin: 30px auto;
@@ -342,12 +467,46 @@
     font-size:12px;
     font-weight: bold;
 }
+/*resposividade*/
+@media(max-width: 1100px){
+    .cardPerfil{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        flex-direction:column;
+        margin: 0 auto;
+    }
+   
 
+}
+@media(max-width: 800px){
+    .organizadores h1{
+        padding: 120px 0px 60px 0px;
+        font-size: 2rem;
+    
+    
+    }
+
+}
+@media(max-width: 600px){
+    .cardPerfil{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        flex-direction:column;
+        margin: 0 auto;
+    }
+    .organizadores h1{
+        padding: 120px 0px 60px 0px;
+        font-size: 1.6rem;
+    
+    
+    }
+
+}
 
 /* ======================= Participe ====================*/
 .informativoInscricoes {
     background-color:#FFFFFF;
-    height:800px;
+    height:100%;
 }
 
 .informativoInscricoes h1{
@@ -397,9 +556,40 @@
 .cardInfor2 button:hover{
     filter:brightness(90%);
 }
+/* resposividade*/
+@media(max-width: 800px){
+    .cardIncricoes{
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        width:400px;
+    }
+    .cardIncricoes .cardInfor2 button{
+       margin: 0 auto;
+       margin-bottom: 40px;
+
+    }
+    .cardIncricoes .cardInfor2 img{
+     
+        margin: 0 auto;
+    }
+    .informativoInscricoes h1{
+        padding: 120px 0px 60px 0px;
+        text-align:center;
+        
+    }
+ 
+
+}
+@media(max-width: 800px){
+    .cardIncricoes{
+        width:350px;
+    }
+
+}
 
 
-/* Rodapé*/
+/* ============== Rodapé ==========================*/
 
 #footerC {
     height:300px;
@@ -420,7 +610,6 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
     
-  
 }
 
 .cardFooter .cardPatoricnio{
@@ -431,8 +620,33 @@
     width:10em;
 }
 
-/* Responsivo button */
+/* ============ Responsivo  =============== */
+
+
 
 .navbar-toggler-icon{
     border: 1px solid #fff;
+}
+@media(max-width: 800px){
+    .cardFooter{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        flex-direction: column;
+        
+    }
+    #footerC{
+        height:320px;
+    }
+    #footerC p{
+        font-size: 0.6rem;
+    }
+    .cardFooter .cardPatoricnio img{
+    
+        width:8em;
+        padding-top: 20px;
+
+    }
+    
+    
 }

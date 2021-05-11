@@ -46,6 +46,15 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 <h1 align="center">
     <img alt="Web Home" src="./.github/web1.png" width="900px">
 </h1>
+<br></br>
+
+## :heavy_check_mark: :computer: Aplicação rodando
+
+<h1 align="center">
+    <img alt="Aplicação rodando" src="./.github/video.gif" width="900px">
+</h1>
+
+
 
 
 <a id="como-usar"></a>
