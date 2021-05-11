@@ -1,0 +1,438 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width:8em;
+    margin-left: 10px;
+}
+
+.container-fluid{
+    padding: 0;
+    background: #0D0030;
+    
+
+}
+.container-fluid .row{
+    margin:0;
+}
+
+/* Navbar */
+
+.navbar{
+
+    margin-bottom: 20px;
+    background: #0D0030;
+    border-bottom: 2px solid rgb(12, 11, 11);
+   
+}
+
+
+.navbar-nav{
+    margin: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 15px 0 15px 0;
+
+}
+.navbar-light .navbar-brand{
+    color:white;
+}
+.navbar-light .navbar-brand:hover{
+    color: white;
+}
+.navbar-light .navbar-nav a.nav-link{
+    color: #FFF;
+    letter-spacing:1px;
+    padding-left: 30px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    filter: brightness(50%);
+    color:white;
+}
+
+
+/* ==================== Container informativo ===========*/
+.containerInfor{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    height: 100%;
+    background: #0D0030;
+
+}
+
+.banner {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.banner img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 18rem;
+}
+
+.informativo{
+    position: absolute; 
+    margin-top: 30rem;
+    text-align: center;
+    background: #fff;   
+    width:600px;
+    height: 300px;
+    border-radius: 4px;
+
+}
+.informativo p{
+
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+    align-items: center;
+    text-align: justify;
+    
+}
+
+.informativo h2{
+    padding-top: 40px;
+    color: #1F0A57;
+}
+.btnInfor{
+    border-radius: 4px;
+    background: #FF7513;
+    color: #fff;
+    border: 0;
+    height:40px;
+    width: 300px;
+
+}
+/* OBJETIVO*/
+.containerCards{
+    height:900px;
+    background-color: #1F0A57;
+}
+
+.containerCards  h1{
+    color: white;
+    padding: 100px 0px 40px 14rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 4rem;
+    color: white;
+    width:900px;
+    margin: 40px auto;
+}
+
+/* card1 */
+.cards .card1 h3{
+    font-size: 1.6rem;
+}
+.cards .card1{
+
+    font-size: 14px;
+}
+.cards .card1 p{
+    text-align:justify;
+    padding-bottom: 40px;
+}
+.cards .card1 img{
+  padding-bottom: 20px;
+}
+.containerObjetivo h1{
+    color: white;
+}
+
+
+/*==================== fases do evento ==================*/
+.fasesEvento{
+    background-color: #fff;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+
+.fasesEvento h1{
+    padding: 60px 0px 40px 60px;
+}
+.cardFaseEvento{
+    display: flex;
+    grid-template-columns:  1fr 1fr;
+    gap: 18rem;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;    
+
+ 
+}
+.cardEvento1{
+    padding-left: 60px;
+ 
+}
+.cardEvento1 p{
+    text-align:justify;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    width: 800px;
+}
+.cardEvento1 span{
+    color: #3C9AE4;
+    font-weight: bold;
+
+
+
+}
+.cardEvento1 a{
+    padding-top: 20px;
+    text-decoration: underline;
+
+    
+
+  
+    
+}
+.cardEvento2 img{
+    width:25em;
+    background-size: cover;
+}
+
+.periodo{
+    margin-bottom: 80px;
+
+}
+
+
+.liveAbertura{
+    margin-bottom: 80px;
+
+}
+.etapa1{
+    margin-bottom: 80px;
+
+
+}
+.resultadoEtapa{
+    margin-bottom: 80px;
+
+}
+
+.etapa2{
+    margin-bottom: 80px;
+
+}
+
+.resultadoEtapa{
+    margin-bottom: 80px;
+
+}
+
+.etapaFinal{
+    margin-bottom: 80px;
+
+}
+.periodo p, .liveAbertura p,  .etapa2 p, .etapa1 p,
+.resultadoEtapa p,.etapaFinal p, .etapaFinal p{
+    width: 500px;
+}
+/* Premios Incriveis */
+
+.cardPremios{
+    display: grid;
+    justify-content: center;
+    color: #fff;
+    height: 800px;
+
+
+}
+.cardPremios h1{
+    padding-left: 5.5rem;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 80px;
+    padding-bottom: 60px;
+
+}
+.cardPremios img{
+    background-size: cover;
+}
+
+/* Informações de apoio */
+
+
+.informacaoApoio{
+    background-color: #fff;
+    margin: 0 auto;
+    height: 800px;
+
+}
+.informacaoApoio h1{
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+}
+
+
+.cardsInformativos{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 3rem;
+    width:900px;
+    margin: 0 auto;
+    text-align:justify;
+}
+
+.cardInfor1 h3,.cardInfor2 h3{
+    color: #3C9AE4;
+    font-size: 1.6rem;
+    padding-bottom: 1.1rem;
+}
+.cardInfor1 p,.cardInfor2 p{
+    font-size: 0.8rem;
+} 
+
+.cardInfor2 .questao{
+    color: black;
+    font-weight: bold;
+}
+
+.cardInfor1 a{
+    color: #FF7513;
+}
+
+/*Comissão organizadora*/ 
+.organizadores{
+    height: 600px;
+    background: #F5F5F5;
+}
+.organizadores h1{
+    padding: 120px 0px 60px 0px;
+    color: #0B0029;
+    text-align:center;
+
+}
+.cardPerfil{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+.cardImg img{
+    margin: 30px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 6em;
+    border-radius: 50%;
+}
+.cardImg span{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    color: #1F0A57;
+    font-size:12px;
+    font-weight: bold;
+}
+
+
+/* ======================= Participe ====================*/
+.informativoInscricoes {
+    background-color:#FFFFFF;
+    height:800px;
+}
+
+.informativoInscricoes h1{
+    padding: 120px 0px 60px 220px;
+    color: #0B0029;
+    
+}
+.cardIncricoes{
+    margin: 0 auto;
+    width:900px;
+    gap: 6rem;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+.cardIncricoes .cardInfor1 span{
+    color: #3C9AE4;
+
+}
+
+.cardInfor1 p{
+    padding-top: 10px;
+   text-align:justify; 
+    font-size: 0.8rem;
+}
+.cardInfor1 img{
+    padding: 10px;
+    padding-left: 0;
+}
+
+
+.cardIncricoes .cardInfor2 {
+    display: grid;
+    flex-direction: column;
+}
+.cardIncricoes .cardInfor2 img{
+    width: 15em;
+
+}
+.cardIncricoes .cardInfor2 button{
+    width: 240px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    background: #FF7513;
+    border-radius: 4px;
+}
+.cardInfor2 button:hover{
+    filter:brightness(90%);
+}
+
+
+/* Rodapé*/
+
+#footerC {
+    height:300px;
+    background-color: #0D0030;
+
+
+
+}
+
+#footerC p{
+    color: #fff;
+    text-align: center;
+    top:50%;
+    position: relative;
+}
+.cardFooter{
+    margin-top: 100px;;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    
+  
+}
+
+.cardFooter .cardPatoricnio{
+    margin: 0 auto;
+}
+.cardFooter .cardPatoricnio img{
+    
+    width:10em;
+}
+
+/* Responsivo button */
+
+.navbar-toggler-icon{
+    border: 1px solid #fff;
+}
