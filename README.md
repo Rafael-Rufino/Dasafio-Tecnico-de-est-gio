@@ -48,6 +48,16 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 </h1>
 <br></br>
 
+## :heavy_check_mark: :computer: Resultado Mobile
+
+<h1 align="center">
+    <img alt="Web Mobile" src="./.github/responsiva.png" width="900px">
+</h1>
+<br></br>
+
+
+
+
 ## :heavy_check_mark: :computer: Aplicação rodando
 
 <h1 align="center">
